@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from schema.product import ProductUpdate, ProductCreate
-from models.product import ProductModel
+from schemas import ProductUpdate, ProductCreate
+from models import ProductModel
 
 # get all (selec * from)
 def get_products(db: Session):
