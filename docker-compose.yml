@@ -1,11 +1,11 @@
-version: '3.8'
+version: '3.12'
 services:
   postgres:
-    image: postgres:latest
+    image: postgres:16.4
     volumes:
       - postgres_data:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: maydatabase
+      POSTGRES_DB: mydatabase  # Corrected to match your DATABASE_URL
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
     networks:
@@ -21,14 +21,13 @@ services:
       DATABASE_URL: postgresql://user:password@postgres/mydatabase
     ports:
       - "8000:8000"
-    depends_on:
+    depends_on: 
       - postgres
     networks:
       - mynetwork
 
 networks:
   mynetwork:
-  
 
 volumes:
   postgres_data:

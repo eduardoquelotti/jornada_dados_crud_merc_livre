@@ -3,10 +3,10 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Declarar URL do banco
-POSTGRES_DATA_BASE_URL = "postgresql://user:password@postgres/mydatabase"
+SQLALCHEMY_DATABASE_URL = "postgresql://user:password@postgres/mydatabase"
 
 # Criar a engine
-engine = create_engine(POSTGRES_DATA_BASE_URL)
+engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
 # Criar a sessão do banco
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
