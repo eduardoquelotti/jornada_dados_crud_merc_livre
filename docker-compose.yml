@@ -1,11 +1,11 @@
 version: '3.12'
 services:
   postgres:
-    image: postgres:16.4
+    image: postgres
     volumes:
       - postgres_data:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: mydatabase  # Corrected to match your DATABASE_URL
+      POSTGRES_DB: mydatabase  
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
     networks:
