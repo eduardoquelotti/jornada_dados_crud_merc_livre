@@ -1,4 +1,4 @@
-# jornada_dados_crud_mercado_livre/backend/Dockerfile
+# Dockerfile-backend
 
 # Imagem base
 FROM python:3.12

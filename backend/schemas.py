@@ -1,5 +1,3 @@
-# jornada_dados_crud_mercado_livre/backend/schemas.py
-
 from pydantic import BaseModel, PositiveFloat, EmailStr, validators
 from enum import Enum
 from datetime import datetime

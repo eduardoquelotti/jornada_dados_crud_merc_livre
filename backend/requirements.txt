@@ -1,12 +1,5 @@
-# jornada_dados_crud_mercado_livre/backend/requirements.txt
-
 fastapi
 uvicorn
 SQLAlchemy
 email-validator
 psycopg2-binary
-alembic
-pytest
-black
-mypy
-logging
