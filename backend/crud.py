@@ -1,3 +1,5 @@
+# jornada_dados_crud_mercado_livre/backend/crud.py
+
 from sqlalchemy.orm import Session
 from schemas import ProductUpdate, ProductCreate
 from models import ProductModel

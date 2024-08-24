@@ -1,3 +1,5 @@
+# jornada_dados_crud_mercado_livre/backend/requirements.txt
+
 fastapi
 uvicorn
 SQLAlchemy
