@@ -12,6 +12,7 @@ pydantic = {extras = ["email"], version = "^2.8.2"}
 fastapi = "^0.112.1"
 uvicorn = "^0.30.6"
 psycopg2-binary = "^2.9.9"
+streamlit = "^1.38.0"
 
 
 [build-system]
